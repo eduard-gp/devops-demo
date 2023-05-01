@@ -1,7 +1,8 @@
 name: Deploy Node.js webapp to Azure
 on:
   push:
-    - main
+    branches:
+      - main
   workflow_dispatch:
 env:
   NODE_VERSION: '16.x'
